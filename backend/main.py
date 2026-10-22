@@ -96,7 +96,7 @@ def summarize(run):
     return {"models": out, "highlights": hl}
 
 
-# ---- offline simulation so the UI can be tested without a key (NOT real model output) ----------
+# ---- offline simulation so the UI can be tested without a key----------
 _PROFILE = {"jev": (0.15, 0.35), "luna": (0.25, 0.30), "clef": (0.10, 0.45), "opus": (2.5, 0.05)}  # (latency s, error rate)
 
 

@@ -3,7 +3,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent.parent / "backend"))
 from cube import *
 
 def test_basic():
-    assert apply_move(SOLVED, "U")[18:21] == "RRR"          # F top row receives R's stickers after U
+    assert apply_move(SOLVED, "U")[18:21] == "RRR"        
     for f in FACES:
         s = SOLVED
         for _ in range(4): s = apply_move(s, f)
